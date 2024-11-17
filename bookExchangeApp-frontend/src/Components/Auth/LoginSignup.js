@@ -2,6 +2,7 @@ import './Auth.css'
 // src/components/Auth/Login.js
 import React, { useState } from 'react'; 
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
     const [isLogin, setLogin] = useState(true);
@@ -11,6 +12,7 @@ function Login() {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
+    const navigate = useNavigate();
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -21,6 +23,7 @@ function Login() {
             // since backend server is running at localhost:5000 port.
             const response = await axios.post('http://localhost:5000/login', { email, password });
             setSuccess('Login successful!' + response.data.err);
+            navigate('/')
         } catch (err) {
             if (err.response) {
                 setError(err.response.data.error);

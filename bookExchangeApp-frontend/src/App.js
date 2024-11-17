@@ -5,7 +5,7 @@ import ForgotPassword from "./Components/Auth/ForgotPassword";
 import { Routes, Route } from 'react-router-dom';
 //import ResetPassword from "./Components/Auth/ResetPassword";
 import Home from "./Components/HomePage/Home";
-//import UserProfile from "./Components/UserProfile/UserProfile";
+import UserProfile from "./Components/UserProfile/UserProfile";
 //import EditProfile from "./Components/UserProfile/EditProfile";
 //import BookCard from "./Components/HomePage/BookCard";
 //import AddBook from "./Components/BookListing/AddBook";  //ToDo uncomment it after actual implementation
@@ -17,6 +17,7 @@ function App() {
       <Route path="/login" element={<LoginSignup />} />
       <Route path="/signup" element = {<Signup />} />
       <Route path="/forgetpwd" element={<ForgotPassword />} />
+      <Route path="/profile" element={<UserProfile />} />
       {/*<Route path="/addbook" element={<AddBook />} />*/}
     </Routes>
   );
