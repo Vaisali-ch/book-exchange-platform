@@ -1,4 +1,4 @@
-### Book Exchange Platform
+# Book Exchange Platform
 The Book Exchange Platform is a full-stack web application that allows users to exchange, lend, and borrow books with others in a community. It offers features like user authentication, book listing, searching, and transaction management. This project is built with a React frontend, a Node.js backend, and an SQLite3 database.
 
 ## Features
@@ -11,11 +11,11 @@ Scalable Architecture: Modular backend and component-based frontend for future e
 
 ## Project Structure
 
-# bookExchangeApp:
-  1. bookExchangeApp-backend
+ ### bookExchangeApp:
+  #### bookExchangeApp-backend
      * db.js :  #include db connection and db related operations for apis
-     * server.js : # created apis logic to communicate with db. this is small combine file for all      #operations, going forward, operations can be separated as per models.
-  2. bookExchangeApp-frontend
+     * server.js : # created apis logic to communicate with db. this is small combine file for all      operations, going forward, operations can be separated as per models.
+  #### bookExchangeApp-frontend
      src:
       1. Components: # Having reusable react componenets
           * Auth: # this component having user login, signup and authentication related logic and operations.
@@ -29,7 +29,7 @@ Scalable Architecture: Modular backend and component-based frontend for future e
 
 ## Installation
 
-   # Prerequisites
+   ### Prerequisites
     1. Node.js (>=16.x)
     2. npm (Comes with Node.js)
     3. SQLite3 (npm install sqlite3)
@@ -68,7 +68,7 @@ Scalable Architecture: Modular backend and component-based frontend for future e
 
 ## API Endpoints
 
-# User Management
+ ### User Management
  1. POST /login		# To login to application.
  2. POST /signup	# To Register User to Application.
  3. POST /forgetpwd	# To recover password if user forgot it.
@@ -77,7 +77,7 @@ Scalable Architecture: Modular backend and component-based frontend for future e
  6. Patch /profile/:user_id  # update user details by user_id.
  7. DELETE /profile/:user_id # deactivate/delete user account from the application.
 
-# Books Management:
+ ### Books Management:
   1. POST /api/books  # Add books on application.
   2. GET /api/books   # List all the books.
   3. GET /api/books/:book_id # Fetch specific book detail
@@ -85,16 +85,16 @@ Scalable Architecture: Modular backend and component-based frontend for future e
   5. DELETE /api/books/:book_id  # delete a book from application.
   6. GET /api/books/:${path_params}  # Find book by given path params (Search book).
 
-# Books Transaction:
+ ### Books Transaction:
   1. PUT /api/bookrecord/:book_id  # Add or Update books track record by book id.
 
 ## Development
 
- # Frontend
+ ### Frontend
    1. React Router: Used for navigation between pages
    2. CSS: Used for page beautification.
 
- # Backend
+ ### Backend
    1. Node.js with Express: REST API for communication with the frontend.
    2. SQLite3: Lightweight database for managing book data.
 
