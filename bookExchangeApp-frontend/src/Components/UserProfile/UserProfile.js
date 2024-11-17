@@ -6,11 +6,11 @@ import './UserProfile.css';
 const UserProfile = () => {
     // Example user data; replace with props or data from an API
     const user = {
-        avatar: 'https://thumb.ac-illust.com/be/bee98c70d1cfc02d0f387d2852464bf5_t.jpeg', // Replace with actual image URL if available
-        name: 'Vaishnavi',
-        email: 'vaishnavi@gmail.com',
+        avatar: 'https://thumb.ac-illust.com/be/bee98c70d1cfc02d0f387d2852464bf5_t.jpeg', // Can be Replaced with actual image URL
+        name: 'Vaisali',
+        email: 'vaisalics0024@gmail.com',
         bio: 'A passionate reader and book lover looking to connect and share books with others.',
-        memberSince: 'January 2022',
+        memberSince: 'November 2024',
         favoriteGenre: 'Science Fiction',
     };
 

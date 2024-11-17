@@ -1,6 +1,6 @@
 // src/components/PasswordReset.js
 import React, { useState } from 'react';
-import './ResetPassword.css'; // Import external CSS
+import './ResetPassword.css'; 
 
 const PasswordReset = () => {
     const [password, setPassword] = useState('');

@@ -1,8 +1,6 @@
 // Path: src/components/AddBook.js
 
 import React, { useState } from 'react';
-//import { Link } from 'react-router-dom'; // For navigation links
-//import axios from 'axios';
 import './AddBook.css';
 
 const AddBook = () => {
@@ -21,12 +19,7 @@ const AddBook = () => {
         }
 
         try {
-            // Send book data to backend API
-            // Uncomment when axios is available
-            // const response = await axios.post('/api/books/add', {
-            //     title, author, genre, condition, availability
-            // });
-
+            // ToDO: implement actual Post API to add book
             // Mock success response
             const response = { data: { success: true } };
 

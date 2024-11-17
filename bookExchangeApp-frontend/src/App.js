@@ -8,7 +8,7 @@ import Home from "./Components/HomePage/Home";
 //import UserProfile from "./Components/UserProfile/UserProfile";
 //import EditProfile from "./Components/UserProfile/EditProfile";
 //import BookCard from "./Components/HomePage/BookCard";
-//import AddBook from "./Components/BookListing/AddBook";
+//import AddBook from "./Components/BookListing/AddBook";  //ToDo uncomment it after actual implementation
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <Route path="/login" element={<LoginSignup />} />
       <Route path="/signup" element = {<Signup />} />
       <Route path="/forgetpwd" element={<ForgotPassword />} />
+      {/*<Route path="/addbook" element={<AddBook />} />*/}
     </Routes>
   );
 }
