@@ -9,11 +9,8 @@ const PORT = 5000;
 
 // Middleware
 app.use(cors());
-app.use(express.json()); // Ensure this line is here
-const JWT_SECRET = 'myjwt_token'; // Replace with an environment variable in production
- 
-// Basic Routes
-  
+app.use(express.json()); 
+const JWT_SECRET = 'myjwt_token'; // need to replace Replace with an environment variable
 
 // Login 
 app.post('/login', (req, res) => {
@@ -39,7 +36,6 @@ app.post('/login', (req, res) => {
 });
 
 // Register User
-// Signup endpoint
 app.post('/signup', async (req, res) => {
   const { fullName, email, password } = req.body;
 
@@ -68,7 +64,6 @@ app.post('/signup', async (req, res) => {
 });
 
 // Get All Books
-// Get All Books
 app.get('/api/books', (req, res) => {
     db.all('SELECT * FROM books', [], (err, rows) => {
       if (err) {
@@ -80,7 +75,6 @@ app.get('/api/books', (req, res) => {
     });
   });
 
-  // Add New Book
 // Add New Book
 app.post('/api/books', (req, res) => {
   const { title, author, genre, condition, availability } = req.body;
