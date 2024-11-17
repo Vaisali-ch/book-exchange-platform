@@ -82,7 +82,7 @@ const Home = () => {
                     <nav>
                     <a href="/"></a>
                     <Link to="/login">Login</Link>
-                    <a href="/register">SignUp</a>
+                    <a href="/signup">SignUp</a>
                     <a href="/profile">Profile</a>
                     </nav>
                 </div>
