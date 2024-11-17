@@ -1,14 +1,7 @@
 import './Auth.css'
 // src/components/Auth/Login.js
-import React, { useState } from 'react'; // Add useState here
-//import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react'; 
 import axios from 'axios';
-
-
-
-//import './ForgotPassword.js'
-//import ForgotPassword from './ForgotPassword.js';
-
 
 function Login() {
     const [isLogin, setLogin] = useState(true);
@@ -25,6 +18,7 @@ function Login() {
         setSuccess('');
 
         try {
+            // since backend server is running at localhost:5000 port.
             const response = await axios.post('http://localhost:5000/login', { email, password });
             setSuccess('Login successful!' + response.data.err);
         } catch (err) {

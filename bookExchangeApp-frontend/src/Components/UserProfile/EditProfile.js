@@ -4,8 +4,8 @@ import './EditProfile.css';
 
 const EditProfile = () => {
     const initialUserData = {
-        name: 'Vaishnavi',
-        email: 'vaishnavi@gmail.com',
+        name: 'Vaishali',
+        email: 'vaisalics0024@gmail.com',
         bio: 'A passionate reader and book lover looking to connect and share books with others.',
         favoriteGenre: 'Science Fiction',
     };
